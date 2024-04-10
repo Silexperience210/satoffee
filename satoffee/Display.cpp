@@ -40,13 +40,13 @@ void startupScreen()
     tft.drawString("EE", x + 5, y + 65, GFXFF);
     tft.setTextSize(2);
     tft.drawString("v1.1.0", x + 3, y + 115, GFXFF);
-    tft.drawString("@danielpcostas", x + 1, y + 135, GFXFF);
+    tft.drawString("@danielpcostas & @Silexperience", x + 1, y + 135, GFXFF);
   } else {
     tft.setTextSize(6);
-    tft.drawString("SATOFFEE", x + 5, y - 15, GFXFF);
+    tft.drawString("LNcandy", x + 5, y - 15, GFXFF);
     tft.setTextSize(2);
     tft.drawString("v1.1.0", x, y + 40, GFXFF);
-    tft.drawString("@danielpcostas", x, y + 60, GFXFF);
+    tft.drawString("@Silexperience & @danielpcostas", x, y + 60, GFXFF);
   }
 }
 
@@ -123,8 +123,8 @@ void stepTwoScreen()
     tft.setTextSize(3);
     tft.setTextColor(TFT_WHITE);
     tft.drawString("PLACE", x - 55, y + 40, GFXFF);
-    tft.drawString("CUP &", x - 55, y + 70, GFXFF);
-    tft.drawString("CLOSE", x - 55, y + 100, GFXFF);
+    tft.drawString("PAY", x - 55, y + 70, GFXFF);
+    tft.drawString("ENJOY", x - 55, y + 100, GFXFF);
   } else {
     tft.drawString("2", x - 70, y, GFXFF);
     tft.fillRect(165, 15, 140, 135, TFT_BLACK);
@@ -152,7 +152,7 @@ void stepThreeScreen()
     tft.setTextSize(3);
     tft.setTextColor(TFT_WHITE);
     tft.drawString("PUSH", x - 55, y + 40, GFXFF);
-    tft.drawString("COFFEE", x - 55, y + 70, GFXFF);
+    tft.drawString("CANDY", x - 55, y + 70, GFXFF);
     tft.drawString("BUTTON", x - 55, y + 100, GFXFF);
   } else {
     tft.drawString("3", x - 70, y, GFXFF);
@@ -161,7 +161,7 @@ void stepThreeScreen()
     tft.setTextSize(3);
     tft.setTextColor(TFT_WHITE);
     tft.drawString("PUSH", x + 20, y - 30, GFXFF);
-    tft.drawString("COFFEE", x + 20, y, GFXFF);
+    tft.drawString("CANDY", x + 20, y, GFXFF);
     tft.drawString("BUTTON", x + 20, y + 30, GFXFF);
   }
 }
@@ -183,7 +183,7 @@ void switchedOnScreen()
     tft.drawString("TIME", x + 3, y + 105, GFXFF);
   } else {
     tft.setTextSize(6);
-    tft.drawString("SATOFFEE", x + 5, y - 15, GFXFF);
+    tft.drawString("LNcandy", x + 5, y - 15, GFXFF);
     tft.setTextSize(4);
     tft.drawString("TIME", x + 3, y + 30, GFXFF);
   }
@@ -204,7 +204,7 @@ void thankYouScreen()
     tft.setTextColor(TFT_WHITE);
     tft.drawString("THANK", x - 55, y + 40, GFXFF);
     tft.drawString("YOU", x - 55, y + 70, GFXFF);
-    tft.drawString("HUMAN", x - 55, y + 100, GFXFF);
+    tft.drawString("PLEBARIAN", x - 55, y + 100, GFXFF);
   } else {
     tft.drawString(";)", x - 70, y, GFXFF);
     tft.fillRect(165, 15, 140, 135, TFT_BLACK);
@@ -213,7 +213,7 @@ void thankYouScreen()
     tft.setTextColor(TFT_WHITE);
     tft.drawString("THANK", x + 20, y - 30, GFXFF);
     tft.drawString("YOU", x + 20, y, GFXFF);
-    tft.drawString("HUMAN", x + 20, y + 30, GFXFF);
+    tft.drawString("PLEBARIAN", x + 20, y + 30, GFXFF);
   }
 }
 
@@ -227,7 +227,7 @@ void showQRScreen()
 
   if (orientation == "v"){
     tft.fillRect(15, 165, 140, 135, TFT_BLACK);
-    tft.drawString("COFFEE", x - 55, y + 40, GFXFF);
+    tft.drawString("CANDY", x - 55, y + 40, GFXFF);
     tft.drawString("FOR", x - 55, y + 70, GFXFF);
     tft.drawString("SATS", x - 55, y + 100, GFXFF);
     tft.setTextSize(2);
@@ -235,7 +235,7 @@ void showQRScreen()
     tft.drawString("HELP", x + 35, y + 150, GFXFF);
   } else {
     tft.fillRect(165, 15, 140, 135, TFT_BLACK);
-    tft.drawString("COFFEE", x + 20, y - 30, GFXFF);
+    tft.drawString("CANDY", x + 20, y - 30, GFXFF);
     tft.drawString("FOR", x + 20, y, GFXFF);
     tft.drawString("SATS", x + 20, y + 30, GFXFF);
     tft.setTextSize(2);
